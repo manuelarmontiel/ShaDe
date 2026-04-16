@@ -1,0 +1,19 @@
+<html>
+	<script>
+		function callRuby(form) {
+			query = 'skp:get_epsilon@' + form.epsilon.value;
+			window.location.href = query;
+		}
+	</script>
+
+	<body>
+		<form name="myform" action="" method="get">Enter the value: <BR>
+
+			<input type="text" size="25" name="epsilon" value="0.01"><br>
+
+			<input type="button" name="button" Value="Send" onClick="callRuby(this.form)">
+	
+		</form>	
+
+	</body>
+</html>

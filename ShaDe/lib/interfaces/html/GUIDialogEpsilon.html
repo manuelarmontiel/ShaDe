@@ -1,0 +1,29 @@
+<html>
+	<script>
+		function callRubyZero(form) {
+			query = 'skp:get_epsilon@' + form.zero.value;
+			window.location.href = query;
+		}
+		function callRubyCustom(form) {
+			query = 'skp:get_epsilon@' + form.custom.value;
+			window.location.href = query;
+		}
+		function callRubyInfinite(form) {
+			query = 'skp:get_epsilon@' + form.infinite.value;
+			window.location.href = query;
+		}
+	</script>
+
+	<body>
+		<form name="myform" action="" method="get">Choose epsilon value: <BR>
+		
+			<input type="button" name="zero" Value="ZERO" onClick="callRubyZero(this.form)">
+
+			<input type="button" name="custom" Value="CUSTOM" onClick="callRubyCustom(this.form)">
+			
+			<input type="button" name="infinite" Value="INFINITE" onClick="callRubyInfinite(this.form)">
+
+		</form>	
+
+	</body>
+</html>
